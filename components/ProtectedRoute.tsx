@@ -16,7 +16,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 
   if (status === 'unauthenticated') return null;
 
-  return <>{children}</>
+  return <>{children}</>;
 }
 
 export default ProtectedRoute;
