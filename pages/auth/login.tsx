@@ -35,10 +35,19 @@ const login = ({
                     </button>
                   </div>
                 );
-              })};
+              })}
           </div>
         </div>
       </div>
     </div>
   );
+};
+
+export default login;
+
+export const getServerSideProps = async () => {
+  const providers = await getProviders();
+  return {
+    props: { providers },
+  };
 };

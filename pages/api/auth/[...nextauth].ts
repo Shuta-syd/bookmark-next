@@ -17,6 +17,6 @@ const options = {
   adapter: PrismaAdapter(prisma),
   secret: process.env.SECRET,
   pages: {
-    signIn: 'auth/login'
+    signIn: '/auth/login',
   },
-}
+};
