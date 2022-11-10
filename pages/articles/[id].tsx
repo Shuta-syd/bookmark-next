@@ -96,6 +96,6 @@ export const getServerSideProps: GetServerSideProps = async ({
     (user: User) => user.email === session.user?.email
   );
   return {
-    props: { article, isBookmarked},
+    props: { article, isBookmarked },
   };
 };
